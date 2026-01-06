@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagination | upCoding</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button class="btn btn-first" onclick="first()">First</button>
+      <button class="btn btn-previous" onclick="prev()">
+        <i class="fa-solid fa-chevron-left"></i>
+        Previous
+      </button>
+      <ul class="pagination">
+        <li
+          class="pagination-item active"
+          value="1"
+          onclick="activePage(event)"
+        >
+          1
+        </li>
+        <li class="pagination-item" value="2" onclick="activePage(event)">2</li>
+        <li class="pagination-item" value="3" onclick="activePage(event)">3</li>
+        <li class="pagination-item" value="4" onclick="activePage(event)">4</li>
+        <li class="pagination-item" value="5" onclick="activePage(event)">5</li>
+      </ul>
+
+      <button class="btn btn-next" onclick="next()">
+        Next
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+      <button class="btn btn-last" onclick="last()">Last</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
